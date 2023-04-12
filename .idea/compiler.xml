@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="discovery-server" />
+        <module name="order-service" />
+        <module name="paytm-payment-service" />
+        <module name="User-Service" />
+        <module name="product-service-catalog" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="17" />
+      <module name="discovery-server" target="1.8" />
+      <module name="order-service" target="17" />
+      <module name="paytm-payment-service" target="1.8" />
+      <module name="product-service-catalog" target="17" />
+      <module name="User-Service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="User-Service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="paytm-payment-service" options="-parameters" />
+      <module name="product-service-catalog" options="-parameters" />
+    </option>
+  </component>
+</project>
